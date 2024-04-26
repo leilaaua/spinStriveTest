@@ -7,19 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1819C1E82BDB8D1800EE070F /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819C1E72BDB8D1800EE070F /* Extension + String.swift */; };
+		1819C1EA2BDB8D8700EE070F /* RoverEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819C1E92BDB8D8700EE070F /* RoverEnum.swift */; };
+		1819C1EC2BDB8DAE00EE070F /* PickerTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819C1EB2BDB8DAE00EE070F /* PickerTypeEnum.swift */; };
+		1819C1EE2BDB968C00EE070F /* Extension + PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819C1ED2BDB968C00EE070F /* Extension + PickerView.swift */; };
+		1819C1F02BDB9C1300EE070F /* Extension + Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819C1EF2BDB9C1300EE070F /* Extension + Date.swift */; };
+		1819C1F22BDBB1EC00EE070F /* MarsEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819C1F12BDBB1EC00EE070F /* MarsEmptyView.swift */; };
+		1819C1F62BDBE82500EE070F /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819C1F52BDBE82500EE070F /* ActivityIndicator.swift */; };
+		1819C1FA2BDC08B500EE070F /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819C1F92BDC08B500EE070F /* Loader.swift */; };
+		1819C1FC2BDC246D00EE070F /* BounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819C1FB2BDC246D00EE070F /* BounceAnimation.swift */; };
 		183184E52BD90B5B0048ECA9 /* SpinStriveTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183184E42BD90B5B0048ECA9 /* SpinStriveTestApp.swift */; };
-		183184E72BD90B5B0048ECA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183184E62BD90B5B0048ECA9 /* ContentView.swift */; };
+		183184E72BD90B5B0048ECA9 /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183184E62BD90B5B0048ECA9 /* CustomNavBarView.swift */; };
 		183184E92BD90B5C0048ECA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183184E82BD90B5C0048ECA9 /* Assets.xcassets */; };
 		183184ED2BD90B5C0048ECA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183184EC2BD90B5C0048ECA9 /* Preview Assets.xcassets */; };
+		183184F42BD9372B0048ECA9 /* RoverImageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183184F32BD9372B0048ECA9 /* RoverImageCellView.swift */; };
+		183184F62BD94D4B0048ECA9 /* MarsCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183184F52BD94D4B0048ECA9 /* MarsCameraView.swift */; };
+		183184F82BD978F80048ECA9 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183184F72BD978F80048ECA9 /* PickerView.swift */; };
+		183184FA2BD999E70048ECA9 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183184F92BD999E70048ECA9 /* DatePickerView.swift */; };
+		183184FE2BD9AEE50048ECA9 /* IconConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183184FD2BD9AEE50048ECA9 /* IconConstants.swift */; };
+		184DE2CB2BDA2B70005636CE /* PhotoFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2CA2BDA2B70005636CE /* PhotoFullScreenView.swift */; };
+		184DE2CD2BDA4880005636CE /* PickerBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2CC2BDA4880005636CE /* PickerBarView.swift */; };
+		184DE2CF2BDA4AD0005636CE /* TextConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2CE2BDA4AD0005636CE /* TextConstants.swift */; };
+		184DE2D32BDA4C98005636CE /* Extension + View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2D22BDA4C98005636CE /* Extension + View.swift */; };
+		184DE2D62BDA4CD0005636CE /* FullScreenModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2D52BDA4CD0005636CE /* FullScreenModifierView.swift */; };
+		184DE2D92BDA4F24005636CE /* Extension + CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2D82BDA4F24005636CE /* Extension + CustomNavBarView.swift */; };
+		184DE2DB2BDA5136005636CE /* Extension + RoverImageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2DA2BDA5136005636CE /* Extension + RoverImageCellView.swift */; };
+		184DE2DD2BDA599F005636CE /* Extension + MarsCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2DC2BDA599F005636CE /* Extension + MarsCameraView.swift */; };
+		184DE2DF2BDA5AD8005636CE /* Extension + PickerBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2DE2BDA5AD8005636CE /* Extension + PickerBarView.swift */; };
+		184DE2E12BDA5CEA005636CE /* Extension + PhotoFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2E02BDA5CEA005636CE /* Extension + PhotoFullScreenView.swift */; };
+		184DE2E62BDA5E4A005636CE /* MarsPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2E52BDA5E4A005636CE /* MarsPhotoModel.swift */; };
+		184DE2E82BDA6F46005636CE /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2E72BDA6F46005636CE /* PhotosModel.swift */; };
+		184DE2EA2BDA6F66005636CE /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2E92BDA6F66005636CE /* CameraModel.swift */; };
+		184DE2EC2BDA6F76005636CE /* RoverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2EB2BDA6F76005636CE /* RoverModel.swift */; };
+		184DE2EE2BDA6FCA005636CE /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2ED2BDA6FCA005636CE /* NetworkLayer.swift */; };
+		184DE2F02BDA7012005636CE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2EF2BDA7012005636CE /* NetworkError.swift */; };
+		184DE2F22BDA7338005636CE /* CameraEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2F12BDA7338005636CE /* CameraEnum.swift */; };
+		184DE2F62BDA95B1005636CE /* MarksCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2F52BDA95B1005636CE /* MarksCameraViewModel.swift */; };
+		184DE2F92BDAD63A005636CE /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 184DE2F82BDAD63A005636CE /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1819C1E72BDB8D1800EE070F /* Extension + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + String.swift"; sourceTree = "<group>"; };
+		1819C1E92BDB8D8700EE070F /* RoverEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverEnum.swift; sourceTree = "<group>"; };
+		1819C1EB2BDB8DAE00EE070F /* PickerTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTypeEnum.swift; sourceTree = "<group>"; };
+		1819C1ED2BDB968C00EE070F /* Extension + PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + PickerView.swift"; sourceTree = "<group>"; };
+		1819C1EF2BDB9C1300EE070F /* Extension + Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + Date.swift"; sourceTree = "<group>"; };
+		1819C1F12BDBB1EC00EE070F /* MarsEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsEmptyView.swift; sourceTree = "<group>"; };
+		1819C1F52BDBE82500EE070F /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		1819C1F92BDC08B500EE070F /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		1819C1FB2BDC246D00EE070F /* BounceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimation.swift; sourceTree = "<group>"; };
 		183184E12BD90B5B0048ECA9 /* SpinStriveTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinStriveTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		183184E42BD90B5B0048ECA9 /* SpinStriveTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinStriveTestApp.swift; sourceTree = "<group>"; };
-		183184E62BD90B5B0048ECA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		183184E62BD90B5B0048ECA9 /* CustomNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarView.swift; sourceTree = "<group>"; };
 		183184E82BD90B5C0048ECA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		183184EA2BD90B5C0048ECA9 /* SpinStriveTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpinStriveTest.entitlements; sourceTree = "<group>"; };
 		183184EC2BD90B5C0048ECA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		183184F32BD9372B0048ECA9 /* RoverImageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverImageCellView.swift; sourceTree = "<group>"; };
+		183184F52BD94D4B0048ECA9 /* MarsCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsCameraView.swift; sourceTree = "<group>"; };
+		183184F72BD978F80048ECA9 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		183184F92BD999E70048ECA9 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		183184FD2BD9AEE50048ECA9 /* IconConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconConstants.swift; sourceTree = "<group>"; };
+		184DE2CA2BDA2B70005636CE /* PhotoFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFullScreenView.swift; sourceTree = "<group>"; };
+		184DE2CC2BDA4880005636CE /* PickerBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerBarView.swift; sourceTree = "<group>"; };
+		184DE2CE2BDA4AD0005636CE /* TextConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextConstants.swift; sourceTree = "<group>"; };
+		184DE2D22BDA4C98005636CE /* Extension + View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + View.swift"; sourceTree = "<group>"; };
+		184DE2D52BDA4CD0005636CE /* FullScreenModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenModifierView.swift; sourceTree = "<group>"; };
+		184DE2D82BDA4F24005636CE /* Extension + CustomNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + CustomNavBarView.swift"; sourceTree = "<group>"; };
+		184DE2DA2BDA5136005636CE /* Extension + RoverImageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + RoverImageCellView.swift"; sourceTree = "<group>"; };
+		184DE2DC2BDA599F005636CE /* Extension + MarsCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + MarsCameraView.swift"; sourceTree = "<group>"; };
+		184DE2DE2BDA5AD8005636CE /* Extension + PickerBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + PickerBarView.swift"; sourceTree = "<group>"; };
+		184DE2E02BDA5CEA005636CE /* Extension + PhotoFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + PhotoFullScreenView.swift"; sourceTree = "<group>"; };
+		184DE2E52BDA5E4A005636CE /* MarsPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotoModel.swift; sourceTree = "<group>"; };
+		184DE2E72BDA6F46005636CE /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
+		184DE2E92BDA6F66005636CE /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		184DE2EB2BDA6F76005636CE /* RoverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverModel.swift; sourceTree = "<group>"; };
+		184DE2ED2BDA6FCA005636CE /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		184DE2EF2BDA7012005636CE /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		184DE2F12BDA7338005636CE /* CameraEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraEnum.swift; sourceTree = "<group>"; };
+		184DE2F52BDA95B1005636CE /* MarksCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarksCameraViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,12 +92,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184DE2F92BDAD63A005636CE /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1819C1E42BDB87DF00EE070F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				1819C1E92BDB8D8700EE070F /* RoverEnum.swift */,
+				184DE2F12BDA7338005636CE /* CameraEnum.swift */,
+				1819C1EB2BDB8DAE00EE070F /* PickerTypeEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		1819C1F42BDBE81500EE070F /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				1819C1F52BDBE82500EE070F /* ActivityIndicator.swift */,
+				1819C1F92BDC08B500EE070F /* Loader.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		183184D82BD90B5B0048ECA9 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +137,12 @@
 		183184E32BD90B5B0048ECA9 /* SpinStriveTest */ = {
 			isa = PBXGroup;
 			children = (
+				184DE2E42BDA5DFF005636CE /* Models */,
+				184DE2D02BDA4C44005636CE /* Views */,
+				184DE2E22BDA5D45005636CE /* ViewModels */,
+				184DE2E32BDA5D4D005636CE /* Networking */,
+				183184FB2BD9AECD0048ECA9 /* Helpers */,
 				183184E42BD90B5B0048ECA9 /* SpinStriveTestApp.swift */,
-				183184E62BD90B5B0048ECA9 /* ContentView.swift */,
 				183184E82BD90B5C0048ECA9 /* Assets.xcassets */,
 				183184EA2BD90B5C0048ECA9 /* SpinStriveTest.entitlements */,
 				183184EB2BD90B5C0048ECA9 /* Preview Content */,
@@ -67,6 +156,103 @@
 				183184EC2BD90B5C0048ECA9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		183184FB2BD9AECD0048ECA9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1819C1F42BDBE81500EE070F /* CustomViews */,
+				1819C1E42BDB87DF00EE070F /* Enums */,
+				184DE2D42BDA4CBF005636CE /* Modifiers */,
+				184DE2D12BDA4C73005636CE /* Extensions */,
+				183184FC2BD9AED40048ECA9 /* Constants */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		183184FC2BD9AED40048ECA9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				183184FD2BD9AEE50048ECA9 /* IconConstants.swift */,
+				184DE2CE2BDA4AD0005636CE /* TextConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		184DE2D02BDA4C44005636CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				183184E62BD90B5B0048ECA9 /* CustomNavBarView.swift */,
+				183184F32BD9372B0048ECA9 /* RoverImageCellView.swift */,
+				183184F52BD94D4B0048ECA9 /* MarsCameraView.swift */,
+				183184F72BD978F80048ECA9 /* PickerView.swift */,
+				184DE2CC2BDA4880005636CE /* PickerBarView.swift */,
+				183184F92BD999E70048ECA9 /* DatePickerView.swift */,
+				184DE2CA2BDA2B70005636CE /* PhotoFullScreenView.swift */,
+				1819C1F12BDBB1EC00EE070F /* MarsEmptyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		184DE2D12BDA4C73005636CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				184DE2D72BDA4F0F005636CE /* ViewComponents */,
+				184DE2D22BDA4C98005636CE /* Extension + View.swift */,
+				1819C1E72BDB8D1800EE070F /* Extension + String.swift */,
+				1819C1EF2BDB9C1300EE070F /* Extension + Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		184DE2D42BDA4CBF005636CE /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				184DE2D52BDA4CD0005636CE /* FullScreenModifierView.swift */,
+				1819C1FB2BDC246D00EE070F /* BounceAnimation.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		184DE2D72BDA4F0F005636CE /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				184DE2D82BDA4F24005636CE /* Extension + CustomNavBarView.swift */,
+				184DE2DA2BDA5136005636CE /* Extension + RoverImageCellView.swift */,
+				184DE2DC2BDA599F005636CE /* Extension + MarsCameraView.swift */,
+				184DE2DE2BDA5AD8005636CE /* Extension + PickerBarView.swift */,
+				184DE2E02BDA5CEA005636CE /* Extension + PhotoFullScreenView.swift */,
+				1819C1ED2BDB968C00EE070F /* Extension + PickerView.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		184DE2E22BDA5D45005636CE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				184DE2F52BDA95B1005636CE /* MarksCameraViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		184DE2E32BDA5D4D005636CE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				184DE2ED2BDA6FCA005636CE /* NetworkLayer.swift */,
+				184DE2EF2BDA7012005636CE /* NetworkError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		184DE2E42BDA5DFF005636CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				184DE2E72BDA6F46005636CE /* PhotosModel.swift */,
+				184DE2E52BDA5E4A005636CE /* MarsPhotoModel.swift */,
+				184DE2E92BDA6F66005636CE /* CameraModel.swift */,
+				184DE2EB2BDA6F76005636CE /* RoverModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +271,9 @@
 			dependencies = (
 			);
 			name = SpinStriveTest;
+			packageProductDependencies = (
+				184DE2F82BDAD63A005636CE /* SDWebImageSwiftUI */,
+			);
 			productName = SpinStriveTest;
 			productReference = 183184E12BD90B5B0048ECA9 /* SpinStriveTest.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +302,9 @@
 				Base,
 			);
 			mainGroup = 183184D82BD90B5B0048ECA9;
+			packageReferences = (
+				184DE2F72BDAD63A005636CE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 183184E22BD90B5B0048ECA9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +331,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				183184E72BD90B5B0048ECA9 /* ContentView.swift in Sources */,
+				184DE2DF2BDA5AD8005636CE /* Extension + PickerBarView.swift in Sources */,
+				1819C1EA2BDB8D8700EE070F /* RoverEnum.swift in Sources */,
+				183184FA2BD999E70048ECA9 /* DatePickerView.swift in Sources */,
+				184DE2F02BDA7012005636CE /* NetworkError.swift in Sources */,
+				184DE2EA2BDA6F66005636CE /* CameraModel.swift in Sources */,
+				184DE2DB2BDA5136005636CE /* Extension + RoverImageCellView.swift in Sources */,
+				1819C1E82BDB8D1800EE070F /* Extension + String.swift in Sources */,
+				184DE2D92BDA4F24005636CE /* Extension + CustomNavBarView.swift in Sources */,
+				1819C1FA2BDC08B500EE070F /* Loader.swift in Sources */,
+				184DE2E12BDA5CEA005636CE /* Extension + PhotoFullScreenView.swift in Sources */,
+				184DE2D62BDA4CD0005636CE /* FullScreenModifierView.swift in Sources */,
+				184DE2CD2BDA4880005636CE /* PickerBarView.swift in Sources */,
+				183184E72BD90B5B0048ECA9 /* CustomNavBarView.swift in Sources */,
+				184DE2DD2BDA599F005636CE /* Extension + MarsCameraView.swift in Sources */,
+				184DE2D32BDA4C98005636CE /* Extension + View.swift in Sources */,
+				184DE2E62BDA5E4A005636CE /* MarsPhotoModel.swift in Sources */,
+				1819C1F02BDB9C1300EE070F /* Extension + Date.swift in Sources */,
+				184DE2F22BDA7338005636CE /* CameraEnum.swift in Sources */,
+				183184F42BD9372B0048ECA9 /* RoverImageCellView.swift in Sources */,
+				183184FE2BD9AEE50048ECA9 /* IconConstants.swift in Sources */,
+				184DE2CB2BDA2B70005636CE /* PhotoFullScreenView.swift in Sources */,
+				183184F62BD94D4B0048ECA9 /* MarsCameraView.swift in Sources */,
+				1819C1EC2BDB8DAE00EE070F /* PickerTypeEnum.swift in Sources */,
+				184DE2EE2BDA6FCA005636CE /* NetworkLayer.swift in Sources */,
+				1819C1EE2BDB968C00EE070F /* Extension + PickerView.swift in Sources */,
+				183184F82BD978F80048ECA9 /* PickerView.swift in Sources */,
+				1819C1FC2BDC246D00EE070F /* BounceAnimation.swift in Sources */,
+				184DE2CF2BDA4AD0005636CE /* TextConstants.swift in Sources */,
+				184DE2F62BDA95B1005636CE /* MarksCameraViewModel.swift in Sources */,
+				184DE2EC2BDA6F76005636CE /* RoverModel.swift in Sources */,
+				1819C1F62BDBE82500EE070F /* ActivityIndicator.swift in Sources */,
+				1819C1F22BDBB1EC00EE070F /* MarsEmptyView.swift in Sources */,
+				184DE2E82BDA6F46005636CE /* PhotosModel.swift in Sources */,
 				183184E52BD90B5B0048ECA9 /* SpinStriveTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,9 +506,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -320,9 +544,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -359,6 +583,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		184DE2F72BDAD63A005636CE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				branch = 2.x;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		184DE2F82BDAD63A005636CE /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 184DE2F72BDAD63A005636CE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 183184D92BD90B5B0048ECA9 /* Project object */;
 }
