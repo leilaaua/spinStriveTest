@@ -21,7 +21,7 @@ extension MarsCameraView {
                 .listRowBackground(Color.clear)
                 .onAppear {
                     Task {
-                        await viewModel.loadMorePhotos(page: viewModel.page + 1)
+                        await viewModel.loadMorePhotos(page: viewModel.page)
                     }
                 }
             }

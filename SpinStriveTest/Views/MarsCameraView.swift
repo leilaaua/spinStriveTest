@@ -16,8 +16,7 @@ struct MarsCameraView<T : MarksCameraViewModelProtocol>: View {
                 
                 if viewModel.isLoading {
                     Loader()
-                } else if
-                    viewModel.isEmptyViewShown {
+                } else if viewModel.isEmptyViewShown {
                     MarsEmptyView()
                 } else {
                     scrollStackView

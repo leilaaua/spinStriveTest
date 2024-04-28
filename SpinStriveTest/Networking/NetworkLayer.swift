@@ -45,8 +45,6 @@ final class NetworkLayer: NetworkLayerProtocol {
             throw NetworkError.invalidURL
         }
         
-        print(url)
-        
         do {
             let data = try await fetchData(from: url)
             

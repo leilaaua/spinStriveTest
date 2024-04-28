@@ -49,9 +49,11 @@ class MarksCameraViewModel: MarksCameraViewModelProtocol {
             await MainActor.run {
                 photos = data.photos
                 isEmptyViewShown = photos.isEmpty
-                hasNextPage = photos.count == perPage
+                hasNextPage = data.photos.count == perPage
                 isLoading = false
+                self.page += 1
             }
+            
         } catch {
             await MainActor.run {
                 isLoading = false
@@ -71,7 +73,8 @@ class MarksCameraViewModel: MarksCameraViewModelProtocol {
             await MainActor.run {
                 isLoading = false
                 photos.append(contentsOf: data.photos)
-                hasNextPage = photos.count == 25
+                hasNextPage = data.photos.count == 25
+                self.page += 1
             }
         } catch {
             print(NetworkError.errorResponse)
@@ -97,11 +100,15 @@ class MarksCameraViewModel: MarksCameraViewModelProtocol {
             Task {
                 await getPhotos(page: page)
             }
+            
+            page = 1
         default:
             pickerType = nil
             Task {
                 await getPhotos(page: page)
             }
+            
+            page = 1
         }
     }
     
