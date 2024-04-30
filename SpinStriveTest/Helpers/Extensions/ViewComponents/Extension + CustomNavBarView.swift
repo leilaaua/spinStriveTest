@@ -3,7 +3,7 @@ import SwiftUI
 extension CustomNavBarView {
     var addButton: some View {
         Button {
-            
+            addButtonAction()
         } label: {
             Image(IconConstants.addIcon)
                 .resizable()

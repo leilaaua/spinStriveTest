@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct MarsEmptyView: View {
+    let message: String
     
     var body: some View {
         ZStack {
@@ -10,7 +11,7 @@ struct MarsEmptyView: View {
                         Image(IconConstants.emptyImage)
                             .resizable()
                             .frame(width: 145, height: 145)
-                        Text(TextConstants.noData)
+                        Text(message)
                             .font(.body)
                             .foregroundColor(.layerTwo)
                             .multilineTextAlignment(.center)
@@ -22,5 +23,5 @@ struct MarsEmptyView: View {
 }
 
 #Preview {
-    MarsEmptyView()
+    MarsEmptyView(message: TextConstants.noData)
 }

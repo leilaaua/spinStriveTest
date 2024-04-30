@@ -4,44 +4,54 @@ struct MarsCameraView<T : MarksCameraViewModelProtocol>: View {
     @ObservedObject var viewModel: T
     
     var body: some View {
-        ZStack {
-            Color.gray.edgesIgnoringSafeArea(.all)
-            
-            VStack(spacing: 0) {
+        NavigationView {
+            ZStack {
+                Color.gray.edgesIgnoringSafeArea(.all)
                 
-                CustomNavBarView(
-                    pickerType: $viewModel.pickerType,
-                    selectedDate: $viewModel.selectedDate
+                VStack(spacing: 0) {
+                    
+                    CustomNavBarView(
+                        pickerType: $viewModel.pickerType,
+                        selectedDate: $viewModel.selectedDate,
+                        addButtonAction: { viewModel.isShowingAlert = true }
+                    )
+                    
+                    if viewModel.isLoading {
+                        Loader()
+                    } else if viewModel.isEmptyViewShown {
+                        MarsEmptyView(message: TextConstants.noData)
+                    } else {
+                        scrollStackView
+                    }
+                }
+                .alert(isPresented: $viewModel.isShowingAlert) {
+                    alertContent
+                }
+                
+                .overlay(
+                    Color.black
+                        .edgesIgnoringSafeArea(.all)
+                        .opacity(viewModel.pickerType != nil ? 0.4 : 0)
                 )
                 
-                if viewModel.isLoading {
-                    Loader()
-                } else if viewModel.isEmptyViewShown {
-                    MarsEmptyView()
-                } else {
-                    scrollStackView
-                }
+                .overlay(
+                    historyIcon, alignment: .bottomTrailing
+                )
+                
+                .disabled(viewModel.pickerType != nil)
+                
+                pickerView()
             }
-            
-            .overlay(
-                Color.black
-                    .edgesIgnoringSafeArea(.all)
-                    .opacity(viewModel.pickerType != nil ? 0.4 : 0)
-            )
-            
-            .disabled(viewModel.pickerType != nil)
-            
-            pickerView()
-        }
-        .environmentObject(viewModel)
-        .onAppear {
-            Task {
-                await viewModel.getPhotos(page: viewModel.page)
+            .environmentObject(viewModel)
+            .onAppear {
+                Task {
+                    await viewModel.getPhotos(page: viewModel.page)
+                }
             }
         }
     }
 }
 
 #Preview {
-    MarsCameraView(viewModel: MarksCameraViewModel(networkLayer: NetworkLayer()))
+    MarsCameraView(viewModel: MarksCameraViewModel(networkLayer: NetworkLayer(), coreDataService: CoreDataService()))
 }

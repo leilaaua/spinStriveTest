@@ -6,7 +6,11 @@ import SwiftUI
 struct SpinStriveTestApp: App {
     var body: some Scene {
         WindowGroup {
-            MarsCameraView(viewModel: MarksCameraViewModel(networkLayer: NetworkLayer()))
+            MarsCameraView(
+                viewModel: MarksCameraViewModel(
+                    networkLayer: NetworkLayer(),
+                    coreDataService: CoreDataService())
+            )
         }
     }
 }

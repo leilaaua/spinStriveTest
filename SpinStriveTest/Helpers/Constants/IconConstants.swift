@@ -3,6 +3,7 @@ struct IconConstants {
     static var roverIcon = "roverIcon"
     static var cameraIcon = "cameraIcon"
     static var addIcon = "addIcon"
+    static var leftIcon = "leftIcon"
     static var historyIcon = "historyIcon"
     static var darkCloseIcon = "darkCloseIcon"
     static var tickIcon = "tickIcon"

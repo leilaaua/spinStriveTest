@@ -1,4 +1,5 @@
 import SwiftUI
+import Combine
 
 protocol MarksCameraViewModelProtocol: ObservableObject {
     var pickerType: PickerTypeEnum? { get set }
@@ -7,10 +8,15 @@ protocol MarksCameraViewModelProtocol: ObservableObject {
     var page: Int { get set }
     var isEmptyViewShown: Bool { get set }
     var selectedDate: Date { get set }
+    var selectedCamera: CameraEnum { get set }
+    var selectedRover: RoverEnum { get set }
     var hasNextPage: Bool { get set }
+    func addFiltersToDB()
+    var coreDataService: CoreDataService { get }
     func loadMorePhotos(page: Int) async
     var isLoading: Bool { get set }
     var perPage: Int { get }
+    var isShowingAlert: Bool { get set }
 }
 
 class MarksCameraViewModel: MarksCameraViewModelProtocol {
@@ -24,61 +30,50 @@ class MarksCameraViewModel: MarksCameraViewModelProtocol {
     @Published var hasNextPage: Bool = false
     @Published var page: Int = 1
     @Published var isLoading: Bool = true
+    @Published var isShowingAlert: Bool = false
     
     let perPage = 25
     
     let networkLayer: NetworkLayerProtocol
     
-    init(networkLayer: NetworkLayerProtocol) {
+    let coreDataService: CoreDataService
+    
+    var cancellables = Set<AnyCancellable>()
+    
+    init(networkLayer: NetworkLayerProtocol, coreDataService: CoreDataService) {
         self.networkLayer = networkLayer
+        self.coreDataService = coreDataService
         selectedDate = RoverEnum.date(for: selectedRover, isMax: false)
+        addSubscriber()
     }
     
-    func getPhotos(page: Int) async {
-        await MainActor.run {
-            isLoading = true
-        }
-        
-        do {
-            let data = try await networkLayer.fetchPhotosData(
-                roverType: selectedRover.rawValue,
-                cameraType: selectedCamera.rawValue,
-                earthDate: selectedDate,
-                page: page
-            )
-            await MainActor.run {
-                photos = data.photos
-                isEmptyViewShown = photos.isEmpty
-                hasNextPage = data.photos.count == perPage
-                isLoading = false
-                self.page += 1
+    func addSubscriber() {
+        coreDataService.$selectedFilter
+            .sink { [weak self] returnedFilter in
+                
+                guard let self = self,
+                      let camera = returnedFilter?.camera,
+                      let cameraRaw = CameraEnum(rawValue: camera),
+                      let rover = returnedFilter?.rover,
+                      let roverRaw = RoverEnum(rawValue: rover),
+                      let date = returnedFilter?.date
+                else { return }
+                
+                selectedDate = date
+                selectedRover = roverRaw
+                temporarySelectedRover = roverRaw
+                selectedCamera = cameraRaw
             }
-            
-        } catch {
-            await MainActor.run {
-                isLoading = false
-                print(NetworkError.errorResponse)
-            }
-        }
+            .store(in: &cancellables)
     }
     
-    func loadMorePhotos(page: Int) async {
-        do {
-            let data = try await networkLayer.fetchPhotosData(
-                roverType: selectedRover.rawValue,
-                cameraType: selectedCamera.rawValue,
-                earthDate: selectedDate,
-                page: page
-            )
-            await MainActor.run {
-                isLoading = false
-                photos.append(contentsOf: data.photos)
-                hasNextPage = data.photos.count == 25
-                self.page += 1
-            }
-        } catch {
-            print(NetworkError.errorResponse)
-        }
+    func addFiltersToDB() {
+        coreDataService.addFilters(
+            id: UUID(),
+            rover: selectedRover.rawValue,
+            camera: selectedCamera.rawValue,
+            date: selectedDate
+        )
     }
     
     var dateClosedRange: ClosedRange<Date> {

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181980012BE12FEC009E6EDB /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181980002BE12FEC009E6EDB /* HistoryView.swift */; };
+		181980032BE133E4009E6EDB /* HistoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181980022BE133E4009E6EDB /* HistoryCellView.swift */; };
+		181980072BE13BC7009E6EDB /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181980062BE13BC7009E6EDB /* CoreDataService.swift */; };
+		1819800A2BE13C94009E6EDB /* FiltersContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 181980082BE13C94009E6EDB /* FiltersContainer.xcdatamodeld */; };
+		1819800C2BE141D0009E6EDB /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819800B2BE141D0009E6EDB /* HistoryViewModel.swift */; };
 		1819C1E82BDB8D1800EE070F /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819C1E72BDB8D1800EE070F /* Extension + String.swift */; };
 		1819C1EA2BDB8D8700EE070F /* RoverEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819C1E92BDB8D8700EE070F /* RoverEnum.swift */; };
 		1819C1EC2BDB8DAE00EE070F /* PickerTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819C1EB2BDB8DAE00EE070F /* PickerTypeEnum.swift */; };
@@ -44,9 +49,17 @@
 		184DE2F22BDA7338005636CE /* CameraEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2F12BDA7338005636CE /* CameraEnum.swift */; };
 		184DE2F62BDA95B1005636CE /* MarksCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184DE2F52BDA95B1005636CE /* MarksCameraViewModel.swift */; };
 		184DE2F92BDAD63A005636CE /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 184DE2F82BDAD63A005636CE /* SDWebImageSwiftUI */; };
+		18544D552BE17E66005B6CFA /* Extension + HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18544D542BE17E66005B6CFA /* Extension + HistoryView.swift */; };
+		18544D572BE17EF1005B6CFA /* Extension + HistoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18544D562BE17EF1005B6CFA /* Extension + HistoryCellView.swift */; };
+		18544D592BE17F5F005B6CFA /* Extension + MarksCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18544D582BE17F5F005B6CFA /* Extension + MarksCameraViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181980002BE12FEC009E6EDB /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		181980022BE133E4009E6EDB /* HistoryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCellView.swift; sourceTree = "<group>"; };
+		181980062BE13BC7009E6EDB /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		181980092BE13C94009E6EDB /* FiltersContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FiltersContainer.xcdatamodel; sourceTree = "<group>"; };
+		1819800B2BE141D0009E6EDB /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		1819C1E72BDB8D1800EE070F /* Extension + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + String.swift"; sourceTree = "<group>"; };
 		1819C1E92BDB8D8700EE070F /* RoverEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverEnum.swift; sourceTree = "<group>"; };
 		1819C1EB2BDB8DAE00EE070F /* PickerTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTypeEnum.swift; sourceTree = "<group>"; };
@@ -85,6 +98,9 @@
 		184DE2EF2BDA7012005636CE /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		184DE2F12BDA7338005636CE /* CameraEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraEnum.swift; sourceTree = "<group>"; };
 		184DE2F52BDA95B1005636CE /* MarksCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarksCameraViewModel.swift; sourceTree = "<group>"; };
+		18544D542BE17E66005B6CFA /* Extension + HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + HistoryView.swift"; sourceTree = "<group>"; };
+		18544D562BE17EF1005B6CFA /* Extension + HistoryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + HistoryCellView.swift"; sourceTree = "<group>"; };
+		18544D582BE17F5F005B6CFA /* Extension + MarksCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + MarksCameraViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +162,7 @@
 				183184E82BD90B5C0048ECA9 /* Assets.xcassets */,
 				183184EA2BD90B5C0048ECA9 /* SpinStriveTest.entitlements */,
 				183184EB2BD90B5C0048ECA9 /* Preview Content */,
+				181980082BE13C94009E6EDB /* FiltersContainer.xcdatamodeld */,
 			);
 			path = SpinStriveTest;
 			sourceTree = "<group>";
@@ -190,6 +207,8 @@
 				183184F92BD999E70048ECA9 /* DatePickerView.swift */,
 				184DE2CA2BDA2B70005636CE /* PhotoFullScreenView.swift */,
 				1819C1F12BDBB1EC00EE070F /* MarsEmptyView.swift */,
+				181980002BE12FEC009E6EDB /* HistoryView.swift */,
+				181980022BE133E4009E6EDB /* HistoryCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +242,9 @@
 				184DE2DE2BDA5AD8005636CE /* Extension + PickerBarView.swift */,
 				184DE2E02BDA5CEA005636CE /* Extension + PhotoFullScreenView.swift */,
 				1819C1ED2BDB968C00EE070F /* Extension + PickerView.swift */,
+				18544D542BE17E66005B6CFA /* Extension + HistoryView.swift */,
+				18544D562BE17EF1005B6CFA /* Extension + HistoryCellView.swift */,
+				18544D582BE17F5F005B6CFA /* Extension + MarksCameraViewModel.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -231,6 +253,8 @@
 			isa = PBXGroup;
 			children = (
 				184DE2F52BDA95B1005636CE /* MarksCameraViewModel.swift */,
+				181980062BE13BC7009E6EDB /* CoreDataService.swift */,
+				1819800B2BE141D0009E6EDB /* HistoryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -335,16 +359,21 @@
 				1819C1EA2BDB8D8700EE070F /* RoverEnum.swift in Sources */,
 				183184FA2BD999E70048ECA9 /* DatePickerView.swift in Sources */,
 				184DE2F02BDA7012005636CE /* NetworkError.swift in Sources */,
+				18544D572BE17EF1005B6CFA /* Extension + HistoryCellView.swift in Sources */,
 				184DE2EA2BDA6F66005636CE /* CameraModel.swift in Sources */,
+				18544D552BE17E66005B6CFA /* Extension + HistoryView.swift in Sources */,
 				184DE2DB2BDA5136005636CE /* Extension + RoverImageCellView.swift in Sources */,
 				1819C1E82BDB8D1800EE070F /* Extension + String.swift in Sources */,
+				181980012BE12FEC009E6EDB /* HistoryView.swift in Sources */,
 				184DE2D92BDA4F24005636CE /* Extension + CustomNavBarView.swift in Sources */,
 				1819C1FA2BDC08B500EE070F /* Loader.swift in Sources */,
 				184DE2E12BDA5CEA005636CE /* Extension + PhotoFullScreenView.swift in Sources */,
 				184DE2D62BDA4CD0005636CE /* FullScreenModifierView.swift in Sources */,
+				18544D592BE17F5F005B6CFA /* Extension + MarksCameraViewModel.swift in Sources */,
 				184DE2CD2BDA4880005636CE /* PickerBarView.swift in Sources */,
 				183184E72BD90B5B0048ECA9 /* CustomNavBarView.swift in Sources */,
 				184DE2DD2BDA599F005636CE /* Extension + MarsCameraView.swift in Sources */,
+				1819800C2BE141D0009E6EDB /* HistoryViewModel.swift in Sources */,
 				184DE2D32BDA4C98005636CE /* Extension + View.swift in Sources */,
 				184DE2E62BDA5E4A005636CE /* MarsPhotoModel.swift in Sources */,
 				1819C1F02BDB9C1300EE070F /* Extension + Date.swift in Sources */,
@@ -359,12 +388,15 @@
 				183184F82BD978F80048ECA9 /* PickerView.swift in Sources */,
 				1819C1FC2BDC246D00EE070F /* BounceAnimation.swift in Sources */,
 				184DE2CF2BDA4AD0005636CE /* TextConstants.swift in Sources */,
+				181980032BE133E4009E6EDB /* HistoryCellView.swift in Sources */,
 				184DE2F62BDA95B1005636CE /* MarksCameraViewModel.swift in Sources */,
+				181980072BE13BC7009E6EDB /* CoreDataService.swift in Sources */,
 				184DE2EC2BDA6F76005636CE /* RoverModel.swift in Sources */,
 				1819C1F62BDBE82500EE070F /* ActivityIndicator.swift in Sources */,
 				1819C1F22BDBB1EC00EE070F /* MarsEmptyView.swift in Sources */,
 				184DE2E82BDA6F46005636CE /* PhotosModel.swift in Sources */,
 				183184E52BD90B5B0048ECA9 /* SpinStriveTestApp.swift in Sources */,
+				1819800A2BE13C94009E6EDB /* FiltersContainer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +634,20 @@
 			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		181980082BE13C94009E6EDB /* FiltersContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				181980092BE13C94009E6EDB /* FiltersContainer.xcdatamodel */,
+			);
+			currentVersion = 181980092BE13C94009E6EDB /* FiltersContainer.xcdatamodel */;
+			name = FiltersContainer.xcdatamodeld;
+			path = /Users/leila/Desktop/SpinStriveTest/SpinStriveTest/FiltersContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 183184D92BD90B5B0048ECA9 /* Project object */;
 }

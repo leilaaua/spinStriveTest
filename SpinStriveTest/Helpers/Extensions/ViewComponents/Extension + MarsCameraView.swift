@@ -43,4 +43,34 @@ extension MarsCameraView {
             EmptyView()
         }
     }
+    
+    var historyIcon: some View {
+        NavigationLink(
+            destination: HistoryView(coreDataService: viewModel.coreDataService)
+        ) {
+            Circle()
+                .fill(Color.accentOne)
+                .frame(width: 70, height: 70)
+                .overlay(
+                    Image(IconConstants.historyIcon)
+                        .resizable()
+                        .frame(width: 32, height: 32)
+                )
+                .padding()
+        }
+    }
+    
+    var alertContent: Alert {
+        Alert(
+            title: Text(TextConstants.saveFilters)
+                .font(.system(size: 22, weight: .bold)),
+            message: Text(TextConstants.saveFilterMessage),
+            primaryButton: .default(Text(TextConstants.save), action: {
+                viewModel.addFiltersToDB()
+            }),
+            secondaryButton: .cancel(Text(TextConstants.cancel), action: {
+                viewModel.isShowingAlert = false
+            })
+        )
+    }
 }

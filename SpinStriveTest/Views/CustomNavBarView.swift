@@ -4,6 +4,8 @@ struct CustomNavBarView: View {
     @Binding var pickerType: PickerTypeEnum?
     @Binding var selectedDate: Date
     
+    var addButtonAction: () -> Void
+    
     var body: some View {
         VStack(spacing: 22) {
             HStack {
@@ -30,5 +32,5 @@ struct CustomNavBarView: View {
 }
 
 #Preview {
-    CustomNavBarView(pickerType: .constant(nil), selectedDate: .constant(Date()))
+    CustomNavBarView(pickerType: .constant(nil), selectedDate: .constant(Date()), addButtonAction: {})
 }
