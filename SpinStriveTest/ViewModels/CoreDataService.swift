@@ -36,6 +36,10 @@ class CoreDataService: CoreDataServiceProtocol {
     }
     
     func addFilters(id: UUID, rover: String, camera: String, date: Date) {
+        guard !savedEntities.contains(where: {
+            $0.rover == rover && $0.camera == camera && $0.date == date
+        })  else { return }
+        
         let newFilters = FilterEntity(context: container.viewContext)
         
         newFilters.id = id
